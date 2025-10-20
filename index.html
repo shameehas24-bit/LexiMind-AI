@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LexiMind AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <header>
+        <img src="assets/leximind_logo.png" alt="LexiMind Logo" class="logo-img">
+        <h1>LexiMind AI</h1>
+        <p>Understand complex content effortlessly — discover books that match your mind</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Simplify Text</h2>
+            <textarea id="inputText" placeholder="Paste article or paragraph here"></textarea>
+            <button onclick="simplifyText()">Simplify</button>
+            <div id="summary" class="output"></div>
+        </div>
+
+        <div class="card">
+            <h2>Mood Analysis</h2>
+            <textarea id="inputMoodText" placeholder="Enter text for mood analysis"></textarea>
+            <button onclick="analyzeMood()">Analyze Mood</button>
+            <input type="text" id="manualMood" placeholder="Or enter mood manually">
+            <div id="mood" class="output"></div>
+        </div>
+
+        <div class="card">
+            <h2>Book Suggestions</h2>
+            <button onclick="getBooks()">Get Suggestions</button>
+            <div id="books" class="output"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
